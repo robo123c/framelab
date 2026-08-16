@@ -1,5 +1,5 @@
 // Film Lab Console style: an original, responsive post-production workspace inspired by the supplied reference.
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Bell,
   Check,
@@ -47,6 +47,10 @@ export default function Home() {
   const [rendered, setRendered] = useState(false);
   const [projectName, setProjectName] = useState("MIDNIGHT RUN");
 
+  useEffect(() => {
+    window.localStorage.setItem("framelab-draft-04", JSON.stringify({ activeSource: activeSource.id, activePreset, ratio, fitMode, textStyle, projectName }));
+  }, [activePreset, activeSource.id, fitMode, projectName, ratio, textStyle]);
+
   const chooseSource = (source: (typeof sources)[number]) => {
     setActiveSource(source);
     setRendered(false);
@@ -81,9 +85,9 @@ export default function Home() {
           <span>FRAME<span>LAB</span></span>
         </a>
         <nav className="top-nav" aria-label="Primary navigation">
-          <a href="#workspace">WORKSPACE</a>
+          <a href="/dashboard">DASHBOARD</a>
           <a href="#library">LIBRARY</a>
-          <a href="#output">OUTPUT</a>
+          <a href="/project/draft-04/song">TIMING</a>
         </nav>
         <div className="top-actions">
           <button type="button" className="credit-chip" onClick={() => toast.message("30 studio credits remain in this demo.")}>30 <Sparkles size={13} /></button>
@@ -147,8 +151,9 @@ export default function Home() {
 
         <section className="stage" aria-label="Project preview">
           <div className="stage-topline">
-            <div className="crumb"><LayoutGrid size={14} /> Studio / Draft 04</div>
+            <a className="crumb" href="/dashboard"><LayoutGrid size={14} /> Studio / Draft 04</a>
             <div className="stage-tools">
+              <a className="timing-link" href="/project/draft-04/song"><SlidersHorizontal size={14} /> Lyrics & beats</a>
               <button type="button" onClick={() => toast.message("Preview controls are available after generating a cut.")}><Play size={14} /> Preview</button>
               <button type="button" aria-label="Stage settings" onClick={() => toast.message("Stage settings are a frontend demo.")}><Settings2 size={16} /></button>
             </div>

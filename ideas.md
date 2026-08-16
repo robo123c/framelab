@@ -64,3 +64,4 @@ The wordmark pairs `Frame` with a small waveform-cut `Lab` suffix. The standalon
 - The bracketed waveform is a recurring FrameLab system motif in the header, staged preview, readiness status, and export state; it is a product signature, not generic decoration.
 - Signal Mint is reserved for active selection, confirmed readiness, progress success, and primary commitment actions. Inactive controls remain graphite, white, or muted green-black.
 - Editorial moments should read like concise cut-room direction with cinematic confidence rather than generic SaaS copy.
+- The dashboard is a workstation lobby, not a marketing landing page: it privileges live draft state, mode selection, and production-readiness readouts over promotional breathing room.

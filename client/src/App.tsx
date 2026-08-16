@@ -1,7 +1,9 @@
 // Film Lab Console style: a dark, cinematic tool surface with mint status signals.
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import Dashboard from "@/pages/Dashboard";
 import NotFound from "@/pages/NotFound";
+import Timing from "@/pages/Timing";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -10,7 +12,11 @@ import Home from "./pages/Home";
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
+      <Route path="/" component={Dashboard} />
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/editor" component={Home} />
+      <Route path="/project/draft-04/preview" component={Home} />
+      <Route path="/project/draft-04/song" component={Timing} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
