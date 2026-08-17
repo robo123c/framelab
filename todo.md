@@ -5,5 +5,18 @@
 - [x] Mirror editor navigation, state transitions, aspect-ratio controls, preset cards, and render readiness with original code and assets.
 - [x] Provide a free, browser-local demo mode with no paid API dependency.
 - [x] Document optional self-hosted integrations for storage, transcoding, transcription, and beat analysis.
-- [ ] Preserve the MIT license, explain the non-affiliation boundary, and audit for proprietary assets or secrets.
+- [x] Preserve the MIT license, explain the non-affiliation boundary, and audit for proprietary assets or secrets.
 - [ ] Test the expanded UI across desktop and mobile, then push the completed update to the public repository.
+- [x] Upgrade to persistent user, database, and file-storage capabilities.
+- [x] Create production data models for projects, media assets, transcript tokens, beat maps, presets, render jobs, and exports.
+- [x] Build authenticated project management, asset upload, timeline editing, and project settings flows.
+- [x] Implement a render-job queue with clear queued, processing, review, completed, and failed states.
+- [x] Add export management and a self-hosted adapter contract for media processing, transcription, and beat analysis.
+- [x] Write deployment, configuration, privacy, and operational documentation for the complete application.
+- [ ] Exercise the end-to-end workflow and publish the full implementation to the public repository.
+- [x] Define the authenticated application API and persistence schema for the integrated web app.
+- [x] Configure optional worker registration, health checks, and shared-job authentication.
+- [x] Create user-facing worker connection settings and processing-status visibility.
+- [x] Add worker setup examples that preserve self-hosted control of media and processing costs.
+- [ ] Commit and push the persistent-workspace, worker, preset/export, and documentation update to the public repository.
+- [ ] Verify the public default branch contains the latest implementation and the local working tree is clean.

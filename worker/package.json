@@ -1,0 +1,13 @@
+{
+  "name": "framelab-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node frame-worker.mjs"
+  },
+  "dependencies": {
+    "@trpc/client": "^11.18.0",
+    "superjson": "^1.13.3"
+  }
+}

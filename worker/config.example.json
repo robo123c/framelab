@@ -1,0 +1,7 @@
+{
+  "appUrl": "https://your-framelab.example",
+  "workerId": 1,
+  "workerToken": "Paste the one-time token issued in the FrameLab Workers screen",
+  "pollIntervalMs": 5000,
+  "renderCommand": ""
+}
